@@ -2,9 +2,12 @@ name: Go
 
 on:
   push:
-    branches: [master, v9, v9.7]
+    branches:
+     - v9.7
+     - bugfix/*
+     - improvement/*
   pull_request:
-    branches: [master, v9, v9.7]
+    branches: [v9.7]
 
 permissions:
   contents: read
